@@ -1,0 +1,22 @@
+{
+    "appid": "22862148",
+    "compilation-args": {
+        "common": {
+            "enhance": true
+        }
+    },
+    "host": "baiduboxapp",
+    "projectname": "网红打卡",
+    "publish": {
+        "version": "1.0.0"
+    },
+    "setting": {
+        "urlCheck": false
+    },
+    "swan": {
+        "baiduboxapp": {
+            "extensionJsVersion": "1.18.3",
+            "swanJsVersion": "3.220.12"
+        }
+    }
+}
