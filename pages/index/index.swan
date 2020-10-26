@@ -1,0 +1,20 @@
+<view class="container">
+    <view class="top">
+        <view class="icon">
+            <smt-icon name='location'></smt-icon>
+        </view>
+        <view class="name">{{name}}</view>
+    </view>
+    <view class="middle">
+        <view class="icon"><smt-icon name="hot"></smt-icon></view>
+    </view>
+    <view class="bottom">
+        <view>
+            <image src=""></image>
+            <view>Continue with Baidu</view>
+        <view class="buttons">
+            <button class="button"> Skip </button>
+            <button class="button"> Sign Up </button>
+        </view>
+    </view>
+</view>

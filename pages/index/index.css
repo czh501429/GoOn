@@ -1,0 +1,22 @@
+/**
+ * @file index.css
+ * @author swan
+ */
+
+ .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 30px;
+    padding: 0 4.23rpx;
+    font-size: 0;
+}
+.middle{
+    display: flex;
+    height: 10px;
+}
+.bottom .buttons .button{
+    display: inline;
+}
