@@ -6,15 +6,15 @@
         <view class="name">{{name}}</view>
     </view>
     <view class="middle">
-        <view class="icon"><smt-icon name="hot"></smt-icon></view>
+        <view class="icon"><smt-icon name="{{iconName}}"></smt-icon></view>
     </view>
     <view class="bottom">
         <view>
             <image src=""></image>
-            <view>Continue with Baidu</view>
+            <view>{{support}}</view>
         <view class="buttons">
-            <button class="button"> Skip </button>
-            <button class="button"> Sign Up </button>
+            <button><navigator open-type="navigate" url="../signIn/signIn">{{sign_in}}</navigator></button>
+            <button><navigator open-type="switchTab" url="../home/home">{{skip}}</navigator></button>
         </view>
     </view>
 </view>

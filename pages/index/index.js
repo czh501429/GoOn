@@ -6,8 +6,11 @@ const app = getApp()
 
 Page({
     data: {
+        sign_in:' Sign In ',
+        skip:' Skip ',
         name:'CAPTURE ROUND',
-        iconName:'like',
+        support:'Continue with Baidu',
+        iconName:'hot',
         iconSize:'40',
 
         // userInfo: {},
@@ -17,10 +20,4 @@ Page({
     onLoad() {
         // 监听页面加载的生命周期函数
     },
-    // getUserInfo(e) {
-    //     this.setData({
-    //         userInfo: e.detail.userInfo,
-    //         hasUserInfo: true
-    //     });
-    // }
 })

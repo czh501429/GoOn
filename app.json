@@ -1,12 +1,13 @@
 {
     "pages": [
         "pages/index/index",
+        "pages/home/home",
         "pages/map/map",
         "pages/plan/plan",
         "pages/sign/sign",
         "pages/community/community",
         "pages/myInfo/myInfo",
-        "pages/home/home"
+        "pages/signIn/signIn"
     ],
     "window": {
         "navigationBarBackgroundColor": "#ffffff",
@@ -19,31 +20,31 @@
             {
                 "pagePath": "pages/home/home",
                 "text": "首页",
-                "iconPath": "/images/API_normal.png",
-                "selectedIconPath": "/images/API_selected.png"
+                "iconPath": "/images/column-3.svg",
+                "selectedIconPath": "/images/column-3.svg"
             },
             {
                 "pagePath": "pages/plan/plan",
                 "text": "线路规格",
-                "iconPath": "/images/component_normal.png",
+                "iconPath": "/images/column-3.png",
                 "selectedIconPath": "/images/component_selected.png"
             },
             {
                 "pagePath": "pages/sign/sign",
                 "text": "打卡",
-                "iconPath": "/images/component_normal.png",
+                "iconPath": "/images/column-3.png",
                 "selectedIconPath": "/images/component_selected.png"
             },
             {
                 "pagePath": "pages/community/community",
                 "text": "晒图社区",
-                "iconPath": "/images/component_normal.png",
+                "iconPath": "/images/column-3.png",
                 "selectedIconPath": "/images/component_selected.png"
             },
             {
                 "pagePath": "pages/myInfo/myInfo",
                 "text": "我的",
-                "iconPath": "/images/component_normal.png",
+                "iconPath": "/images/column-3.png",
                 "selectedIconPath": "/images/component_selected.png"
             }
         ],

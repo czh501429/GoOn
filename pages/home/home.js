@@ -1,29 +1,44 @@
 Page({
     data: {
+        inputValue:'',
+        swiperList: [
+            {
+                className: 'color-a',
+                value: 'A'
+            }, {
+                className: 'color-b',
+                value: 'B'
+            }, {
+                className: 'color-c',
+                value: 'C'
+            }
+        ],
+        current: 0,
+        itemId: 0,
+        switchDuration: 500,
+        autoPlayInterval: 2000,
+        slider: [{
+            imageUrl: 'https://b.bdstatic.com/searchbox/icms/searchbox/img/swiperA.png'
+        }, {
+            imageUrl: 'https://b.bdstatic.com/searchbox/icms/searchbox/img/swiperB.png'
+        }, {
+            imageUrl: 'https://b.bdstatic.com/searchbox/icms/searchbox/img/swiperC.png'
+        }],
+        swiperCurrent: 0,
+        currentTab: 0
+    },
+    swiperChange(e) {
+        console.log('swiperChange:', e.detail);
+        this.setData({
+            itemId: e.detail.current
+        });
+    },
 
+    bindinput(e){
+        this.setData({
+            inputValue:e.detail.value
+
+        });
+        console.log(this.getData('inputValue'))
     },
-    onLoad: function () {
-        // 监听页面加载的生命周期函数
-    },
-    onReady: function() {
-        // 监听页面初次渲染完成的生命周期函数
-    },
-    onShow: function() {
-        // 监听页面显示的生命周期函数
-    },
-    onHide: function() {
-        // 监听页面隐藏的生命周期函数
-    },
-    onUnload: function() {
-        // 监听页面卸载的生命周期函数
-    },
-    onPullDownRefresh: function() {
-        // 监听用户下拉动作
-    },
-    onReachBottom: function() {
-        // 页面上拉触底事件的处理函数
-    },
-    onShareAppMessage: function () {
-        // 用户点击右上角转发
-    }
 });
