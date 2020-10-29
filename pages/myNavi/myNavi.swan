@@ -1,0 +1,6 @@
+<smt-navigation
+    backgroundColor='{{color}}'
+    isFullScreenWidth='true'
+    backIcon='{{backIcon}}'
+    backHome='{{backHome}}'>
+</smt-navigation>

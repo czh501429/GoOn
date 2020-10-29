@@ -14,7 +14,7 @@
             <view>{{support}}</view>
         <view class="buttons">
             <button><navigator open-type="navigate" url="../signIn/signIn">{{sign_in}}</navigator></button>
-            <button><navigator open-type="switchTab" url="../home/home">{{skip}}</navigator></button>
+            <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">{{getBaiduInfo}}</button>
         </view>
     </view>
 </view>

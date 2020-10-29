@@ -1,3 +1,6 @@
 <view class="container">
     <!--to do-->
+    <button class="login-in">
+        <navigator open-type="navigate" url="../index/index">登录</navigator>
+    </button>
 </view>

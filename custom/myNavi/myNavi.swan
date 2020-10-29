@@ -1,0 +1,14 @@
+<smt-navigation
+    backgroundColor='{{color}}'
+    isFullScreenWidth='true'
+    fontColor='red'
+    >
+    <view class="location">{{locationInfo}}</view>
+
+</smt-navigation>
+<smt-navigator>
+    <view class="search-view">
+        <input class="search" placeholder="搜索" bindinput="bindinput">
+        </input/>
+    </view>
+</navigator>

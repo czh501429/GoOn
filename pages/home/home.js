@@ -1,5 +1,38 @@
 Page({
     data: {
+        suggestTitle:'推荐城市',
+        suggestCities:[
+            {
+                name:'苏州',
+            },
+            {
+                name:'无锡',
+            },
+            {
+                name:'上海',
+            },
+            {
+                name:'杭州',
+            },
+            {
+                name:'北京',
+            },
+            {
+                name:'北京',
+            },
+            {
+                name:'北京',
+            },
+            {
+                name:'北京',
+            },
+            {
+                name:'北京',
+            },
+        ],
+        color:'yellow',
+        backIcon:'true',
+        backHome:'true',
         inputValue:'',
         swiperList: [
             {
@@ -25,7 +58,19 @@ Page({
             imageUrl: 'https://b.bdstatic.com/searchbox/icms/searchbox/img/swiperC.png'
         }],
         swiperCurrent: 0,
-        currentTab: 0
+        currentTab: 0,
+        locationInfo:'定位',
+        infoList: [
+        // {
+        //     chineseName: '国家',
+        //     engName: 'country',
+        //     value: ''
+        // },
+        {
+            chineseName: '城市名称',
+            engName: 'city',
+            value: ''
+        }]
     },
     swiperChange(e) {
         console.log('swiperChange:', e.detail);
@@ -33,12 +78,37 @@ Page({
             itemId: e.detail.current
         });
     },
-
     bindinput(e){
         this.setData({
             inputValue:e.detail.value
 
         });
         console.log(this.getData('inputValue'))
+    },
+
+    getLocation(e) {
+        var locationInfo='';
+        swan.getLocation({
+            type: 'gcj02',
+            success: res => {
+                let infoList = this.getData('infoList');
+                for (var i = 0; i < infoList.length; i++) {
+                    const engName = infoList[i].engName;
+                    locationInfo=locationInfo+res[engName];
+                    infoList[i].value = res[engName];
+                }
+                console.log(locationInfo);
+                this.setData({
+                    locationInfo:locationInfo,
+                    infoList:infoList,
+                });
+            },
+            fail: err => {
+                swan.showToast({
+                    title: '获取失败,请检查位置授权是否开启',
+                    icon: 'none'
+                });
+            }
+        });
     },
 });

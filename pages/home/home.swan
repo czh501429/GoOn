@@ -1,17 +1,32 @@
+<smt-navigation
+    backgroundColor='{{color}}'
+    isFullScreenWidth='true'
+    fontColor='red'
+    >
+    <view class="location">{{locationInfo}}</view>
+    <view class="search-view">
+        <input class="search" placeholder="搜索" bindinput="bindinput">
+        </input/>
+    </view>
+</smt-navigation>
+
 <view class="container">
     <view class="top">
-        <!-- <view class="top-left">
-            <smt-icon name="location"></smt-icon>
-            <view class="location">
-                <view></view>
-                <view></view>
+        <view class="info">
+            <view>
+                <view class="place"></view>
+                <button type="primary" bindtap="getLocation">定位</button>
+                <!-- <view class="list-area border-bottom" s-for="item in infoList">
+                    <view class="list-item-key-4">{{item.chineseName}}}</view>
+                    <view class="list-item-value">{{item.value}}</view>
+                </view> -->
             </view>
-        </view> -->
-        <view class="search-view">
-            <input class="search" placeholder="搜索" bindinput="bindinput"/>
-            <svg t="1603804615856" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3171" data-spm-anchor-id="a313x.7781069.0.i2" width="24" height="24"><path d="M945.066667 898.133333l-189.866667-189.866666c55.466667-64 87.466667-149.333333 87.466667-241.066667 0-204.8-168.533333-373.333333-373.333334-373.333333S96 264.533333 96 469.333333 264.533333 842.666667 469.333333 842.666667c91.733333 0 174.933333-34.133333 241.066667-87.466667l189.866667 189.866667c6.4 6.4 14.933333 8.533333 23.466666 8.533333s17.066667-2.133333 23.466667-8.533333c8.533333-12.8 8.533333-34.133333-2.133333-46.933334zM469.333333 778.666667C298.666667 778.666667 160 640 160 469.333333S298.666667 160 469.333333 160 778.666667 298.666667 778.666667 469.333333 640 778.666667 469.333333 778.666667z" p-id="3172" fill="#2c2c2c"></path></svg>
-            <!-- <smt-icon name='search' class="search-button" bind:tap="search"></smt-icon> -->
+            <view class="user">
+                <view>
+                </view>
+            </view>
         </view>
+
     </view>
     <view class="middle">
         <swiper
@@ -19,7 +34,7 @@
             indicator-dots="true"
             indicator-color="rgba(0,0,0,0.30)"
             indicator-active-color="#fff"
-            autoplay="true"
+            autoplay="false"
             interval="{{autoPlayInterval}}"
             duration="{{switchDuration}}"
             circular="true"
@@ -32,6 +47,16 @@
                 <view class="swiper-item">{{item.value}}</view>
             </swiper-item>
         </swiper>
+
+        <view class="suggest">
+            <view class="suggest-title">{{suggestTitle}}</view>
+            <view class="suggest-list" s-for="city,i in suggestCities">
+                <view class="city">
+                    {{city.name}}
+                </view>
+                <view class="city-newline" s-if="(i+1)%3==0"></view>
+            </view>
+        </view>
     </view>
     <view class="buttom">
         <view class=""></view>

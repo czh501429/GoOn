@@ -1,5 +1,8 @@
 {
+    "navigationStyle": "custom",
     "usingComponents": {
-        "smt-icon": "@smt-ui/component/src/icon"
+        "smt-icon": "@smt-ui/component/src/icon",
+        "smt-navigation": "@smt-ui/component/src/navigation",
+        "custom-nav":"/custom/myNavi/myNavi"
     }
 }

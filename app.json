@@ -1,7 +1,7 @@
 {
     "pages": [
-        "pages/index/index",
         "pages/home/home",
+        "pages/index/index",
         "pages/map/map",
         "pages/plan/plan",
         "pages/sign/sign",
@@ -53,4 +53,6 @@
         "color": "#000",
         "selectedColor": "#6495ED"
     }
+
+
 }
