@@ -3,30 +3,14 @@
     isFullScreenWidth='true'
     fontColor='red'
     >
-    <view class="location">{{locationInfo}}</view>
-    <view class="search-view">
-        <input class="search" placeholder="搜索" bindinput="bindinput">
-        </input/>
-    </view>
+    <view class="location" bindtap="getLocation">{{locationInfo}}</view>
 </smt-navigation>
 
 <view class="container">
     <view class="top">
-        <view class="info">
-            <view>
-                <view class="place"></view>
-                <button type="primary" bindtap="getLocation">定位</button>
-                <!-- <view class="list-area border-bottom" s-for="item in infoList">
-                    <view class="list-item-key-4">{{item.chineseName}}}</view>
-                    <view class="list-item-value">{{item.value}}</view>
-                </view> -->
-            </view>
-            <view class="user">
-                <view>
-                </view>
-            </view>
+        <view class="search-view">
+            <input class="search" placeholder="搜索" bindinput="bindinput"></input/>
         </view>
-
     </view>
     <view class="middle">
         <swiper
@@ -48,15 +32,21 @@
             </swiper-item>
         </swiper>
 
-        <view class="suggest">
             <view class="suggest-title">{{suggestTitle}}</view>
-            <view class="suggest-list" s-for="city,i in suggestCities">
-                <view class="city">
+            <scroll-view
+            class="scroll-view"
+            scroll-x="true"
+            bindscrolltoupper="toLeft"
+            bindscrolltolower="toRight"
+            scroll-left="{= scrollLeft =}"
+            upper-threshold="1"
+            lower-threshold="1"
+            >
+                <view class="suggest-list" s-for="city,i in suggestCities">
                     {{city.name}}
                 </view>
-                <view class="city-newline" s-if="(i+1)%3==0"></view>
-            </view>
-        </view>
+            </scroll-view>
+
     </view>
     <view class="buttom">
         <view class=""></view>

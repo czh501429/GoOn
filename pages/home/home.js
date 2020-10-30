@@ -1,5 +1,6 @@
 Page({
     data: {
+        scrollLeft: 0,
         suggestTitle:'推荐城市',
         suggestCities:[
             {
@@ -109,6 +110,18 @@ Page({
                     icon: 'none'
                 });
             }
+        });
+    },
+    toLeft() {
+        swan.showToast({
+            title: '到最左边了',
+            icon: 'none'
+        });
+    },
+    toRight() {
+        swan.showToast({
+            title: '到最右边了',
+            icon: 'none'
         });
     },
 });
