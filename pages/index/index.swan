@@ -13,7 +13,7 @@
             <image src=""></image>
             <view>{{support}}</view>
         <view class="buttons">
-            <button><navigator open-type="navigate" url="../signIn/signIn">{{sign_in}}</navigator></button>
+            <button>{{sign_in}}</navigator></button>
             <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">{{getBaiduInfo}}</button>
         </view>
     </view>

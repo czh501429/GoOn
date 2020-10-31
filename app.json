@@ -24,18 +24,6 @@
                 "selectedIconPath": "/images/column-3.svg"
             },
             {
-                "pagePath": "pages/plan/plan",
-                "text": "线路规格",
-                "iconPath": "/images/column-3.png",
-                "selectedIconPath": "/images/component_selected.png"
-            },
-            {
-                "pagePath": "pages/sign/sign",
-                "text": "打卡",
-                "iconPath": "/images/column-3.png",
-                "selectedIconPath": "/images/component_selected.png"
-            },
-            {
                 "pagePath": "pages/community/community",
                 "text": "晒图社区",
                 "iconPath": "/images/column-3.png",
