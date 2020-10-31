@@ -3,7 +3,9 @@
     isFullScreenWidth='true'
     fontColor='red'
     >
-    <view class="location" bindtap="getLocation">{{locationInfo}}</view>
+    <view class="location" bindtap="getLocation">
+        <view class="iconfont">&#xe638;</view>{{locationInfo}}
+    </view>
 </smt-navigation>
 
 <view class="container">
