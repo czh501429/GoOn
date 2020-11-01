@@ -21,25 +21,26 @@
             {
                 "pagePath": "pages/home/home",
                 "text": "首页",
-                "iconPath": "/images/column-3.svg",
-                "selectedIconPath": "/images/column-3.svg"
+                "iconPath": "/images/shouye.svg",
+                "selectedIconPath": "/images/shouye-x.svg"
             },
             {
                 "pagePath": "pages/community/community",
-                "text": "晒图社区",
-                "iconPath": "/images/column-3.png",
-                "selectedIconPath": "/images/component_selected.png"
+                "text": "社区",
+                "iconPath": "/images/faxian.svg",
+                "selectedIconPath": "/images/faxian-x.svg"
             },
             {
                 "pagePath": "pages/myInfo/myInfo",
                 "text": "我的",
-                "iconPath": "/images/column-3.png",
-                "selectedIconPath": "/images/component_selected.png"
+                "iconPath": "/images/user.svg",
+                "selectedIconPath": "/images/user-x.svg"
             }
         ],
-        "backgroundColor": "#ffffff",
+        "backgroundColor": "#eeeeee",
         "borderStyle": "white",
         "color": "#000",
-        "selectedColor": "#6495ED"
+        "selectedColor": "#0061b2"
+
     }
 }
