@@ -7,7 +7,8 @@
         "pages/sign/sign",
         "pages/community/community",
         "pages/myInfo/myInfo",
-        "pages/signIn/signIn"
+        "pages/signIn/signIn",
+        "pages/searchCity/searchCity"
     ],
     "window": {
         "navigationBarBackgroundColor": "#ffffff",
@@ -41,6 +42,4 @@
         "color": "#000",
         "selectedColor": "#6495ED"
     }
-
-
 }
