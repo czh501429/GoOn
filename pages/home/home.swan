@@ -3,9 +3,9 @@
     isFullScreenWidth='true'
     fontColor='red'
     >
-    <text class="location" bindtap="getLocation">
+    <navigator class="location" open-type="navigate" url="../searchCity/searchCity">
         <text class="iconfont">&#xe638;</text>{{locationInfo}}
-    </text>
+    </navigator>
 </smt-navigation>
 
 <view class="container">

@@ -86,7 +86,7 @@ Page({
         });
     },
     swiperChange(e) {
-        console.log('swiperChange:', e.detail);
+        // console.log('swiperChange:', e.detail);
         this.setData({
             itemId: e.detail.current
         });

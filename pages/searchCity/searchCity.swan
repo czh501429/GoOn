@@ -1,3 +1,22 @@
 <view class="container">
     <!--to do-->
+    <view class="citiesList">
+        <scroll-view
+            scroll-y
+            upper-threshold="1"
+            lower-threshold="1"
+            scroll-top="{= scrollTop =}"
+            scroll-into-view="{= scrollIntoView =}"
+            scroll-with-animation="true"
+            class="left-scroll-view">
+            <view class="lname" hover-class="lname-hover" s-for="item,index in cities" data-index="{{index}}" bindtap="selected">
+                {{item.name}}
+            </view>
+        </scroll-view>
+        <scroll-view class="right-scroll-view">
+            <view class="rname" s-for="item in cities[0].list">
+                {{item.rname}}
+            </view>
+        </scroll-view>
+    </view>
 </view>
