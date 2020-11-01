@@ -3,9 +3,9 @@
     isFullScreenWidth='true'
     fontColor='red'
     >
-    <view class="location" bindtap="getLocation">
-        <view class="iconfont">&#xe638;</view>{{locationInfo}}
-    </view>
+    <text class="location" bindtap="getLocation">
+        <text class="iconfont">&#xe638;</text>{{locationInfo}}
+    </text>
 </smt-navigation>
 
 <view class="container">
@@ -20,7 +20,7 @@
             indicator-dots="true"
             indicator-color="rgba(0,0,0,0.30)"
             indicator-active-color="#fff"
-            autoplay="false"
+            autoplay="true"
             interval="{{autoPlayInterval}}"
             duration="{{switchDuration}}"
             circular="true"

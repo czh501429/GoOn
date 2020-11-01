@@ -20,7 +20,7 @@
             {
                 "pagePath": "pages/home/home",
                 "text": "首页",
-                "iconPath": "/images/weibiaoti.svg",
+                "iconPath": "/images/shouye.svg",
                 "selectedIconPath": "/images/shouye-x.svg"
             },
             {
