@@ -15,7 +15,9 @@
         </scroll-view>
         <scroll-view class="right-scroll-view">
             <view class="rname" s-for="item in cities[0].list">
-                {{item.rname}}
+                <view class="img">
+                </view>
+                <view class="city-name">{{item.rname}}</view>
             </view>
         </scroll-view>
     </view>

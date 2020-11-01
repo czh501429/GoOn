@@ -30,9 +30,13 @@
 }
 .rname{
     display: inline-block;
-    font-size: small;
-    width: 3rem;
     margin: 0 1%;
+}
+.img{
+    background-color: lightgreen;
+    width: 3rem;
     height: 3rem;
-    background-color: rgb(88, 92, 90);
+}
+.city-name{
+    text-align: center;
 }
